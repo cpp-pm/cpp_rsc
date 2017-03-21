@@ -8,7 +8,7 @@ if(Boost_UNIT_TEST_FRAMEWORK_FOUND)
   enable_testing()
 else()
   message(STATUS "No Boost::Test found. All tests have been disabled.")
-endif()  
+endif()
 
 set(CMAKE_BUILD_TYPE Debug)
 
@@ -19,4 +19,3 @@ if(Boost_UNIT_TEST_FRAMEWORK_FOUND)
 endif()
 
 add_subdirectory(cmake_test)
-
