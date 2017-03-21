@@ -13,9 +13,4 @@ endif()
 set(CMAKE_BUILD_TYPE Debug)
 
 add_subdirectory(src)
-
-if(Boost_UNIT_TEST_FRAMEWORK_FOUND)
-  add_subdirectory(tests)
-endif()
-
 add_subdirectory(cmake_test)
