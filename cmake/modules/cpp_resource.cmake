@@ -19,7 +19,7 @@ function(find_resource_compiler)
   get_property(CMDRSC GLOBAL PROPERTY CPPRSC_CMD)
   message(STATUS "Resource compiler: " ${CMDRSC})
 
-endfunction(find_resource_compiler)
+endfunction()
 
 function(add_resource name)
 
@@ -82,7 +82,7 @@ function(add_resource name)
                      COMMAND ${CMDRSC} ${RSC_FILE_NAME}
                      DEPENDS ${RSC_FILE_NAME})
 
-endfunction(add_resource name)
+endfunction()
 
 function(link_resource_file name)
 
@@ -99,4 +99,4 @@ function(link_resource_file name)
 
   set_source_files_properties(${RSC_FILE_NAME} PROPERTIES OBJECT_DEPENDS ${ARL_FILE})
 
-endfunction(link_resource_file name)
+endfunction()
